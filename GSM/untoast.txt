@@ -1,0 +1,370 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 60.98      0.25     0.25    28976     0.01     0.01  Short_term_synthesis_filtering
+ 14.63      0.31     0.06     7244     0.01     0.01  ulaw_output
+  4.88      0.33     0.02                             __gnu_mcount_nc
+  3.66      0.35     0.02                             fputc
+  2.44      0.36     0.01    28976     0.00     0.00  APCM_inverse_quantization
+  2.44      0.37     0.01    28976     0.00     0.00  Gsm_RPE_Decoding
+  2.44      0.38     0.01    28976     0.00     0.00  RPE_grid_positioning
+  2.44      0.39     0.01     7244     0.00     0.04  Gsm_Decoder
+  2.44      0.40     0.01     7244     0.00     0.04  Gsm_Short_Term_Synthesis_Filter
+  2.44      0.41     0.01                             new_do_write
+  1.22      0.41     0.01                             fileno_unlocked
+  0.00      0.41     0.00   376688     0.00     0.00  gsm_asr
+  0.00      0.41     0.00    57952     0.00     0.00  gsm_sub
+  0.00      0.41     0.00    28976     0.00     0.00  APCM_quantization_xmaxc_to_exp_mant
+  0.00      0.41     0.00    28976     0.00     0.00  Gsm_Long_Term_Synthesis_Filtering
+  0.00      0.41     0.00    28976     0.00     0.00  LARp_to_rp
+  0.00      0.41     0.00    28976     0.00     0.00  gsm_asl
+  0.00      0.41     0.00     7244     0.00     0.00  Coefficients_0_12
+  0.00      0.41     0.00     7244     0.00     0.00  Coefficients_13_26
+  0.00      0.41     0.00     7244     0.00     0.00  Coefficients_27_39
+  0.00      0.41     0.00     7244     0.00     0.00  Coefficients_40_159
+  0.00      0.41     0.00     7244     0.00     0.00  Decoding_of_the_coded_Log_Area_Ratios
+  0.00      0.41     0.00     7244     0.00     0.00  Postprocessing
+  0.00      0.41     0.00     7244     0.00     0.04  gsm_decode
+  0.00      0.41     0.00        7     0.00     0.00  put_u32
+  0.00      0.41     0.00        2     0.00     0.00  gsm_option
+  0.00      0.41     0.00        2     0.00     0.00  suffix
+  0.00      0.41     0.00        1     0.00     0.00  audio_init_output
+  0.00      0.41     0.00        1     0.00     0.00  catch_signals
+  0.00      0.41     0.00        1     0.00     0.00  codename
+  0.00      0.41     0.00        1     0.00     0.00  emalloc
+  0.00      0.41     0.00        1     0.00     0.00  endname
+  0.00      0.41     0.00        1     0.00     0.00  gsm_create
+  0.00      0.41     0.00        1     0.00     0.00  gsm_destroy
+  0.00      0.41     0.00        1     0.00   360.00  main
+  0.00      0.41     0.00        1     0.00     0.00  normalname
+  0.00      0.41     0.00        1     0.00     0.00  okay_as_input
+  0.00      0.41     0.00        1     0.00     0.00  open_input
+  0.00      0.41     0.00        1     0.00     0.00  open_output
+  0.00      0.41     0.00        1     0.00     0.00  parse_argv0
+  0.00      0.41     0.00        1     0.00     0.00  prepare_io
+  0.00      0.41     0.00        1     0.00   360.00  process
+  0.00      0.41     0.00        1     0.00   360.00  process_decode
+  0.00      0.41     0.00        1     0.00     0.00  set_format
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 2.44% of 0.41 seconds
+
+index % time    self  children    called     name
+                0.00    0.36       1/1           __libc_start_main [4]
+[1]     87.8    0.00    0.36       1         main [1]
+                0.00    0.36       1/1           process [2]
+                0.00    0.00       1/1           parse_argv0 [43]
+                0.00    0.00       1/1           set_format [45]
+                0.00    0.00       1/1           catch_signals [33]
+-----------------------------------------------
+                0.00    0.36       1/1           main [1]
+[2]     87.8    0.00    0.36       1         process [2]
+                0.00    0.36       1/1           process_decode [3]
+                0.00    0.00       1/1           open_input [41]
+                0.00    0.00       1/1           open_output [42]
+                0.00    0.00       1/1           audio_init_output [32]
+-----------------------------------------------
+                0.00    0.36       1/1           process [2]
+[3]     87.8    0.00    0.36       1         process_decode [3]
+                0.00    0.30    7244/7244        gsm_decode [6]
+                0.06    0.00    7244/7244        ulaw_output [9]
+                0.00    0.00       2/2           gsm_option [30]
+                0.00    0.00       1/1           gsm_create [37]
+                0.00    0.00       1/1           gsm_destroy [38]
+-----------------------------------------------
+                                                 <spontaneous>
+[4]     87.8    0.00    0.36                 __libc_start_main [4]
+                0.00    0.36       1/1           main [1]
+-----------------------------------------------
+                0.01    0.29    7244/7244        gsm_decode [6]
+[5]     73.2    0.01    0.29    7244         Gsm_Decoder [5]
+                0.01    0.25    7244/7244        Gsm_Short_Term_Synthesis_Filter [7]
+                0.01    0.02   28976/28976       Gsm_RPE_Decoding [10]
+                0.00    0.00   28976/28976       Gsm_Long_Term_Synthesis_Filtering [20]
+                0.00    0.00    7244/7244        Postprocessing [28]
+-----------------------------------------------
+                0.00    0.30    7244/7244        process_decode [3]
+[6]     73.2    0.00    0.30    7244         gsm_decode [6]
+                0.01    0.29    7244/7244        Gsm_Decoder [5]
+-----------------------------------------------
+                0.01    0.25    7244/7244        Gsm_Decoder [5]
+[7]     63.4    0.01    0.25    7244         Gsm_Short_Term_Synthesis_Filter [7]
+                0.25    0.00   28976/28976       Short_term_synthesis_filtering [8]
+                0.00    0.00   28976/28976       LARp_to_rp [21]
+                0.00    0.00    7244/7244        Decoding_of_the_coded_Log_Area_Ratios [27]
+                0.00    0.00    7244/7244        Coefficients_0_12 [23]
+                0.00    0.00    7244/7244        Coefficients_13_26 [24]
+                0.00    0.00    7244/7244        Coefficients_27_39 [25]
+                0.00    0.00    7244/7244        Coefficients_40_159 [26]
+-----------------------------------------------
+                0.25    0.00   28976/28976       Gsm_Short_Term_Synthesis_Filter [7]
+[8]     61.0    0.25    0.00   28976         Short_term_synthesis_filtering [8]
+-----------------------------------------------
+                0.06    0.00    7244/7244        process_decode [3]
+[9]     14.6    0.06    0.00    7244         ulaw_output [9]
+-----------------------------------------------
+                0.01    0.02   28976/28976       Gsm_Decoder [5]
+[10]     7.3    0.01    0.02   28976         Gsm_RPE_Decoding [10]
+                0.01    0.00   28976/28976       APCM_inverse_quantization [13]
+                0.01    0.00   28976/28976       RPE_grid_positioning [14]
+                0.00    0.00   28976/28976       APCM_quantization_xmaxc_to_exp_mant [19]
+-----------------------------------------------
+                                                 <spontaneous>
+[11]     4.9    0.02    0.00                 __gnu_mcount_nc [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[12]     3.7    0.02    0.00                 fputc [12]
+-----------------------------------------------
+                0.01    0.00   28976/28976       Gsm_RPE_Decoding [10]
+[13]     2.4    0.01    0.00   28976         APCM_inverse_quantization [13]
+                0.00    0.00  376688/376688      gsm_asr [17]
+                0.00    0.00   57952/57952       gsm_sub [18]
+                0.00    0.00   28976/28976       gsm_asl [22]
+-----------------------------------------------
+                0.01    0.00   28976/28976       Gsm_RPE_Decoding [10]
+[14]     2.4    0.01    0.00   28976         RPE_grid_positioning [14]
+-----------------------------------------------
+                                                 <spontaneous>
+[15]     2.4    0.01    0.00                 new_do_write [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[16]     1.2    0.01    0.00                 fileno_unlocked [16]
+-----------------------------------------------
+                0.00    0.00  376688/376688      APCM_inverse_quantization [13]
+[17]     0.0    0.00    0.00  376688         gsm_asr [17]
+-----------------------------------------------
+                0.00    0.00   57952/57952       APCM_inverse_quantization [13]
+[18]     0.0    0.00    0.00   57952         gsm_sub [18]
+-----------------------------------------------
+                0.00    0.00   28976/28976       Gsm_RPE_Decoding [10]
+[19]     0.0    0.00    0.00   28976         APCM_quantization_xmaxc_to_exp_mant [19]
+-----------------------------------------------
+                0.00    0.00   28976/28976       Gsm_Decoder [5]
+[20]     0.0    0.00    0.00   28976         Gsm_Long_Term_Synthesis_Filtering [20]
+-----------------------------------------------
+                0.00    0.00   28976/28976       Gsm_Short_Term_Synthesis_Filter [7]
+[21]     0.0    0.00    0.00   28976         LARp_to_rp [21]
+-----------------------------------------------
+                0.00    0.00   28976/28976       APCM_inverse_quantization [13]
+[22]     0.0    0.00    0.00   28976         gsm_asl [22]
+-----------------------------------------------
+                0.00    0.00    7244/7244        Gsm_Short_Term_Synthesis_Filter [7]
+[23]     0.0    0.00    0.00    7244         Coefficients_0_12 [23]
+-----------------------------------------------
+                0.00    0.00    7244/7244        Gsm_Short_Term_Synthesis_Filter [7]
+[24]     0.0    0.00    0.00    7244         Coefficients_13_26 [24]
+-----------------------------------------------
+                0.00    0.00    7244/7244        Gsm_Short_Term_Synthesis_Filter [7]
+[25]     0.0    0.00    0.00    7244         Coefficients_27_39 [25]
+-----------------------------------------------
+                0.00    0.00    7244/7244        Gsm_Short_Term_Synthesis_Filter [7]
+[26]     0.0    0.00    0.00    7244         Coefficients_40_159 [26]
+-----------------------------------------------
+                0.00    0.00    7244/7244        Gsm_Short_Term_Synthesis_Filter [7]
+[27]     0.0    0.00    0.00    7244         Decoding_of_the_coded_Log_Area_Ratios [27]
+-----------------------------------------------
+                0.00    0.00    7244/7244        Gsm_Decoder [5]
+[28]     0.0    0.00    0.00    7244         Postprocessing [28]
+-----------------------------------------------
+                0.00    0.00       7/7           audio_init_output [32]
+[29]     0.0    0.00    0.00       7         put_u32 [29]
+-----------------------------------------------
+                0.00    0.00       2/2           process_decode [3]
+[30]     0.0    0.00    0.00       2         gsm_option [30]
+-----------------------------------------------
+                0.00    0.00       2/2           normalname [39]
+[31]     0.0    0.00    0.00       2         suffix [31]
+-----------------------------------------------
+                0.00    0.00       1/1           process [2]
+[32]     0.0    0.00    0.00       1         audio_init_output [32]
+                0.00    0.00       7/7           put_u32 [29]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[33]     0.0    0.00    0.00       1         catch_signals [33]
+-----------------------------------------------
+                0.00    0.00       1/1           open_input [41]
+[34]     0.0    0.00    0.00       1         codename [34]
+                0.00    0.00       1/1           normalname [39]
+-----------------------------------------------
+                0.00    0.00       1/1           normalname [39]
+[35]     0.0    0.00    0.00       1         emalloc [35]
+-----------------------------------------------
+                0.00    0.00       1/1           parse_argv0 [43]
+[36]     0.0    0.00    0.00       1         endname [36]
+-----------------------------------------------
+                0.00    0.00       1/1           process_decode [3]
+[37]     0.0    0.00    0.00       1         gsm_create [37]
+-----------------------------------------------
+                0.00    0.00       1/1           process_decode [3]
+[38]     0.0    0.00    0.00       1         gsm_destroy [38]
+-----------------------------------------------
+                0.00    0.00       1/1           codename [34]
+[39]     0.0    0.00    0.00       1         normalname [39]
+                0.00    0.00       2/2           suffix [31]
+                0.00    0.00       1/1           emalloc [35]
+-----------------------------------------------
+                0.00    0.00       1/1           open_input [41]
+[40]     0.0    0.00    0.00       1         okay_as_input [40]
+-----------------------------------------------
+                0.00    0.00       1/1           process [2]
+[41]     0.0    0.00    0.00       1         open_input [41]
+                0.00    0.00       1/1           codename [34]
+                0.00    0.00       1/1           okay_as_input [40]
+                0.00    0.00       1/1           prepare_io [44]
+-----------------------------------------------
+                0.00    0.00       1/1           process [2]
+[42]     0.0    0.00    0.00       1         open_output [42]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[43]     0.0    0.00    0.00       1         parse_argv0 [43]
+                0.00    0.00       1/1           endname [36]
+-----------------------------------------------
+                0.00    0.00       1/1           open_input [41]
+[44]     0.0    0.00    0.00       1         prepare_io [44]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[45]     0.0    0.00    0.00       1         set_format [45]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [13] APCM_inverse_quantization [11] __gnu_mcount_nc      [1] main
+  [19] APCM_quantization_xmaxc_to_exp_mant [32] audio_init_output [15] new_do_write
+  [23] Coefficients_0_12      [33] catch_signals          [39] normalname
+  [24] Coefficients_13_26     [34] codename               [40] okay_as_input
+  [25] Coefficients_27_39     [35] emalloc                [41] open_input
+  [26] Coefficients_40_159    [36] endname                [42] open_output
+  [27] Decoding_of_the_coded_Log_Area_Ratios [16] fileno_unlocked [43] parse_argv0
+   [5] Gsm_Decoder            [12] fputc                  [44] prepare_io
+  [20] Gsm_Long_Term_Synthesis_Filtering [22] gsm_asl      [2] process
+  [10] Gsm_RPE_Decoding       [17] gsm_asr                 [3] process_decode
+   [7] Gsm_Short_Term_Synthesis_Filter [37] gsm_create    [29] put_u32
+  [21] LARp_to_rp              [6] gsm_decode             [45] set_format
+  [28] Postprocessing         [38] gsm_destroy            [31] suffix
+  [14] RPE_grid_positioning   [30] gsm_option              [9] ulaw_output
+   [8] Short_term_synthesis_filtering [18] gsm_sub
